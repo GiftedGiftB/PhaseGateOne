@@ -23,22 +23,23 @@ public class MenstrualCycleCalculator {
 		currentCycleStartDate = Temp;
 		}
 
-/*        
-        if (cycleLength < 0) {
-            cycleLength += 30; // Assuming a 30-day month
-} */
+
 	cycleLength = currentCycleStartDate - lastCycleStartDate;
 
 	int ovulationDay = lastCycleStartDate + cycleLength / 2;
 
 	System.out.println("The length of your cycle is: " + cycleLength);
+
 	System.out.println("Your ovulation day is approximately on day: " + ovulationDay);
 
-	int safePeriodStart = ovulationDay + 2; // Assuming 2 days after ovulation
 
-	int safePeriodEnd = lastCycleStartDate + cycleLength; // Assuming safe period ends before next cycle
+	int safePeriodStart = ovulationDay + 2; 
+
+	int safePeriodEnd = lastCycleStartDate + cycleLength; 
 
 	System.out.println("Your safe period is approximately from day " + safePeriodStart + " to day " + safePeriodEnd);
+
+
 }
 }
 
