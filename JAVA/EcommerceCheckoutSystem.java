@@ -20,13 +20,15 @@ public class EcommerceCheckoutSystem{
 
 	
         double total = pieces * perUnits;
-       
+        double valueAddedTax = total * 0.075;
+
         System.out.println("Customer Name: " + customerName);
         System.out.println("Item: " + userItems);
         System.out.println("Quantity: " + pieces);
         System.out.println("Price: " + perUnits);
         System.out.println("Total: " + total);
-       
+        System.out.println("VAT (7.5%): " + valueAddedTax);
+        
 
 
 }
