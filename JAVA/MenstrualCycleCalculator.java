@@ -17,14 +17,14 @@ public class MenstrualCycleCalculator {
 	if(lastCycleStartDate > currentCycleStartDate){
 		lastCycleStartDate = lastCycleStartDate;
 		}
-	if (lastCycleStartDate < currentCycleStartDate){
+	else if(lastCycleStartDate < currentCycleStartDate){
 		Temp = lastCycleStartDate;
 		lastCycleStartDate = currentCycleStartDate;
 		currentCycleStartDate = Temp;
 		}
 
 
-	cycleLength = currentCycleStartDate - lastCycleStartDate;
+	cycleLength = lastCycleStartDate - currentCycleStartDate;
 
 	int ovulationDay = lastCycleStartDate + cycleLength / 2;
 
