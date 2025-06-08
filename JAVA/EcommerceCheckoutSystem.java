@@ -13,12 +13,20 @@ public class EcommerceCheckoutSystem{
 	int pieces = input.nextInt();
 
 	System.out.print("How much per unit: ");
-	int perUnits = input.nextInt();
+	double perUnits = input.nextInt();
 
-	System.out.print("Add more items?: ");
-	int addItems = input.nextInt();
+	//System.out.print("Add more items?: ");
+	//int addItems = input.nextInt();
 
-
+	
+        double total = pieces * perUnits;
+       
+        System.out.println("Customer Name: " + customerName);
+        System.out.println("Item: " + userItems);
+        System.out.println("Quantity: " + pieces);
+        System.out.println("Price: " + perUnits);
+        System.out.println("Total: " + total);
+       
 
 
 }
