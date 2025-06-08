@@ -6,8 +6,8 @@ public class EcommerceCheckoutSystem{
 	System.out.print("What is the customer's name: ");
 	String customerName = input.next();
 
-is_running = True	
-while(True){
+	
+	//while(isRunning){
 
 	System.out.print("What did the user buy: ");
 	String userItems = input.next();
@@ -18,21 +18,20 @@ while(True){
 	System.out.print("How much per unit: ");
 	double perUnits = input.nextInt();
 
-	System.out.print("Add more items? (1 for yes and 0 for no): ");
+	/* System.out.print("Add more items? (1 for yes and 0 for no): ");
 	int addItems = input.nextInt();
 
 	if(addItems == 0){
-	
-} 
-
+	isRunning = false;
+} */
 
         double total = pieces * perUnits;
         double valueAddedTax = total * 0.075;
         double totalWithVat = total + valueAddedTax;
-}
 
-while is_ruunning = 0
-	is_running = False;
+	
+//}
+
 
         System.out.println("Customer Name: " + customerName);
         System.out.println("Item: " + userItems);
@@ -41,7 +40,8 @@ while is_ruunning = 0
         System.out.println("Total: " + total);
         System.out.println("The Value-added Tax (7.5%) is: " + valueAddedTax);
         System.out.println("Total with VAT: " + totalWithVat);
-	System.out.print("THANK YOU FOR YOUR PATRONAGE");
+	System.out.println("THANK YOU FOR YOUR PATRONAGE");
+	System.out.println();
 
 }
 }
