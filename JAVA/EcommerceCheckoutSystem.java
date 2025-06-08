@@ -5,6 +5,8 @@ public class EcommerceCheckoutSystem{
 
 	System.out.print("What is the customer's name: ");
 	String customerName = input.next();
+	
+while(addItems != -00){
 
 	System.out.print("What did the user buy: ");
 	String userItems = input.next();
@@ -15,17 +17,18 @@ public class EcommerceCheckoutSystem{
 	System.out.print("How much per unit: ");
 	double perUnits = input.nextInt();
 
-	/* System.out.print("Add more items? (1 for yes and 0 for no): ");
+	System.out.print("Add more items? (1 for yes and 0 for no): ");
 	int addItems = input.nextInt();
 
-	if(addItems == 0){
+	/* if(addItems == 0){
 		break;
 } */
+
 
         double total = pieces * perUnits;
         double valueAddedTax = total * 0.075;
         double totalWithVat = total + valueAddedTax;
-
+}
         System.out.println("Customer Name: " + customerName);
         System.out.println("Item: " + userItems);
         System.out.println("Quantity: " + pieces);
