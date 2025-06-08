@@ -15,21 +15,25 @@ public class EcommerceCheckoutSystem{
 	System.out.print("How much per unit: ");
 	double perUnits = input.nextInt();
 
-	//System.out.print("Add more items?: ");
-	//int addItems = input.nextInt();
+	/* System.out.print("Add more items? (1 for yes and 0 for no): ");
+	int addItems = input.nextInt();
 
-	
+	if(addItems == 0){
+		break;
+} */
+
         double total = pieces * perUnits;
         double valueAddedTax = total * 0.075;
-        double totalWithVat = total + vat;
+        double totalWithVat = total + valueAddedTax;
 
         System.out.println("Customer Name: " + customerName);
         System.out.println("Item: " + userItems);
         System.out.println("Quantity: " + pieces);
         System.out.println("Price: " + perUnits);
         System.out.println("Total: " + total);
-        System.out.println("VAT (7.5%): " + valueAddedTax);
+        System.out.println("The Value-added Tax (7.5%) is: " + valueAddedTax);
         System.out.println("Total with VAT: " + totalWithVat);
+	System.out.print("THANK YOU FOR YOUR PATRONAGE");
 
 }
 }
