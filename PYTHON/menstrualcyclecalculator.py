@@ -3,36 +3,18 @@ print("""
 		Menstral cycle App
 
 """)
+last_cycle_start_date = int(input("Enter last cycle start date (in days, e.g., 1-31): "))
 
-userInput1;
-userInput2;
-userInput3;
+current_cycle_start_date = int(input("Enter current cycle start date (in days, e.g., 1-31): "))
 
-lengthCycle;
-	
-temp = 0;
-	
-userInput1 = int(input("Enter current date at which your menstral cycle started: "));
-	 
-userInput2 = int(input("Enter last date of when you started your menstral cycle: "));	
-	
-userInput3 = int(input("Enter date you stoped menstrating: "));
-	
-if(userInput1 > userInput2){
-	userInput1 = userInput2
-}
-elif (userInput1 < userInput2){
-	Temp = userInput1;
-	userInput1 = userInput2;
-	userInput2 = Temp;
-}
+if last_cycle_start_date > current_cycle_start_date:
+    temp = last_cycle_start_date
+    last_cycle_start_date = current_cycle_start_date
+    current_cycle_start_date = temp
 
-		lengthCycle = userInput1 - userInput2;
-	
-		ovulationDay = lengthCycle - 14;
+cycle_length = current_cycle_start_date - last_cycle_start_date
 
-		#safePeriod = 
+ovulation_day = last_cycle_start_date + cycle_length // 2
 
-			print("The length of your cycle is: " + lengthCycle);
-			print("Your ovulation day is in: " + ovulationDay + " days");
-			#print("Your safe period is: " + safePeriod " days after you've stoped menstrating");
+print(f"The length of your cycle is: {cycle_length}")
+print(f"Your ovulation day is approximately on day: {ovulation_day}")
