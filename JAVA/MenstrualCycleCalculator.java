@@ -17,7 +17,7 @@ public class MenstrualCycleCalculator {
 	if(lastCycleStartDate > currentCycleStartDate){
 		lastCycleStartDate = lastCycleStartDate;
 		}
-	else if (lastCycleStartDate < currentCycleStartDate){
+	if (lastCycleStartDate < currentCycleStartDate){
 		Temp = lastCycleStartDate;
 		lastCycleStartDate = currentCycleStartDate;
 		currentCycleStartDate = Temp;
