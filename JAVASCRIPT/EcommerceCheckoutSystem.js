@@ -1,4 +1,5 @@
-let customerName = confirm("What is the customer's name: ");
+console.log()
 
-		console.log(customerName)
+console.log("		Semicolon Ecommerce Checkout System")
 
+	
