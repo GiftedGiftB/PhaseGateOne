@@ -1,8 +1,7 @@
 print("""
-
 		Menstral cycle App
-
 """)
+
 last_cycle_start_date = int(input("Enter last cycle start date (in days, e.g., 1-31): "))
 
 current_cycle_start_date = int(input("Enter current cycle start date (in days, e.g., 1-31): "))
@@ -24,5 +23,3 @@ safe_period_start = ovulation_day + 2
 safe_period_end = last_cycle_start_date + cycle_length
 
 print(f"Your safe period is approximately from day {safe_period_start} to day {safe_period_end}")
-
-
