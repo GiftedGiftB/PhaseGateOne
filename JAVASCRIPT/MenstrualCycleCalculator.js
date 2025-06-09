@@ -16,6 +16,8 @@ if (lastCycleStartDate > currentCycleStartDate) {
 
 let cycleLength = currentCycleStartDate - lastCycleStartDate;
 
+let ovulationDay = lastCycleStartDate + Math.floor(cycleLength / 2);
 
 console.log("The length of your cycle is: " + cycleLength);
 
+console.log("Your ovulation day is approximately on day: " + ovulationDay);
