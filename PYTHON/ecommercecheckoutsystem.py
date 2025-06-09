@@ -20,7 +20,19 @@ value_added_tax = 0.075 * total
 
 total_with_vat = total + value_added_tax
 
+print()
+print("Customer Name: {customerName}");
+
+print("Item: {user_items}");
+
+print("Quantity: {pieces}");
+
+print("Price: {per_units}");
 
 print(f"The total is: {total}")
 
 print(f"The value added tax is: {value_added_tax}")
+
+print(f"The total wit vat is: {total_with_vat}")
+
+print("THANK YOU FOR YOUR PATRONAGE");
