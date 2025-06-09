@@ -18,5 +18,9 @@ total = pieces * per_units
 
 value_added_tax = 0.075 * total
 
+total_with_vat = total + value_added_tax
 
-print(f"The total is {total}")
+
+print(f"The total is: {total}")
+
+print(f"The value added tax is: {value_added_tax}")
