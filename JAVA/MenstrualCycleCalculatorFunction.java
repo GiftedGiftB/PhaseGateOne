@@ -1,4 +1,4 @@
-public MenstrualCycleCalculatorFunction{
+ public MenstrualCycleCalculatorFunction{
 	
 
 	public static int MenstrualCycleCalculator(){

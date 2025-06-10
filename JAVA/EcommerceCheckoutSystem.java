@@ -3,10 +3,15 @@ public class EcommerceCheckoutSystem{
 	public static void main(String[] args){
 	Scanner input = new Scanner(System.in);
 
+
+	System.out.print("""
+		Semicolon Ecommerce Checkout System
+""");
+
 	System.out.print("What is the customer's name: ");
 	String customerName = input.next();
 
-	
+
 	//while(isRunning){
 
 	System.out.print("What did the user buy: ");
@@ -42,6 +47,7 @@ public class EcommerceCheckoutSystem{
         System.out.println("Total with VAT: " + totalWithVat);
 	System.out.println("THANK YOU FOR YOUR PATRONAGE");
 	System.out.println();
+
 
 }
 }
