@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class MbtiTest {
-	static Scanner input = new Scanner(System.in);
+	Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		String A;
