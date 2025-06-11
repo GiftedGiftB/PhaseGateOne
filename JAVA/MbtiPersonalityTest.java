@@ -2,6 +2,12 @@ import java.util.Scanner;
 class MbtiTest {
 	Scanner input = new Scanner(System.in);
 
+	if(choice != A || choice != B){
+		}
+			else {
+				System.out.print("You have onlu 2 options (A/B)");
+		}
+
 	public static void main(String[] args) {
 		String A;
 		String B;
@@ -27,11 +33,6 @@ class MbtiTest {
 		System.out.println("B. Brainstorming new ideas and exploring different possibilities.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next();
-		if(choice != A || choice != B){
-		}
-			else {
-				System.out.print("You have onlu 2 options (A/B)");
-		}
 		return choice.equals("A") ? "J" : "P";
     }
 
