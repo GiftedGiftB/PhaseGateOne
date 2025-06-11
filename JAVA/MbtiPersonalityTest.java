@@ -1,21 +1,12 @@
 import java.util.Scanner;
 class MbtiTest {
-	Scanner input = new Scanner(System.in);
-
-	if(choice != A || choice != B){
-		}
-			else {
-				System.out.print("You have onlu 2 options (A/B)");
-		}
+	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		String A;
-		String B;
-		String a;
-		String b;
-		
+
 		System.out.println("""
-				MBTI Personality Test""");
+				MBTI Personality Test 
+""");
 		
 		String judgingPerceiving = getJudgingPerceiving();
 		String extraversionIntroversion = getExtraversionIntroversion();
