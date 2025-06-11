@@ -3,10 +3,13 @@ class MbtiTest {
 	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
+		String A;
+		String B;
+		String a;
+		String b;
+		
 		System.out.println("""
-
-				MBTI Personality Test
-""");
+				MBTI Personality Test""");
 		
 		String judgingPerceiving = getJudgingPerceiving();
 		String extraversionIntroversion = getExtraversionIntroversion();
@@ -23,7 +26,12 @@ class MbtiTest {
 		System.out.println("A. Breaking down the task into smaller, manageable parts and creating a schedule.");
 		System.out.println("B. Brainstorming new ideas and exploring different possibilities.");
 		System.out.print("\nEnter your choice (A/B): ");
-		String choice = input.next().toUpperCase();
+		String choice = input.next();
+		if(choice != A || choice != B){
+		}
+			else {
+				System.out.print("You have onlu 2 options (A/B)");
+		}
 		return choice.equals("A") ? "J" : "P";
     }
 
