@@ -13,39 +13,37 @@ class MbtiTest {
 		String thinkingFeeling = getThinkingFeeling();
 		String sensingIntuition = getSensingIntuition();
 		String adaptability = getAdaptability();
-		  //String personalityType = sensingIntuition + extraversionIntroversion + thinkingFeeling + judgingPerceiving;
-
 
 		String personalityType = sensingIntuition + extraversionIntroversion + thinkingFeeling + judgingPerceiving;
 
 		System.out.println("\nYour personality type is: " + personalityType);
     }
 
-	public static String getJudgingPerceiving() {
+	public static String getJudgingPerceiving(){
 		System.out.println("\nWhen working on a project, what motivates you more?");
 		System.out.println("A. Breaking down the task into smaller, manageable parts and creating a schedule.");
 		System.out.println("B. Brainstorming new ideas and exploring different possibilities.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next();
-		return choice.equals("A") ? "J" : "P";
+		return choice.equals("A") ? "J";
     }
 
-	public static String getExtraversionIntroversion() {
+	public static String getExtraversionIntroversion(){
 		System.out.println("\nIn social situations, how do you typically feel?");
 		System.out.println("A. Energized and enthusiastic, enjoying the company of others.");
 		System.out.println("B. Reserved and reflective, preferring to observe before contributing.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "E" : "I";
+		return choice.equals("A") ? "E";
     }
 
-	public static String getThinkingFeeling() {
+	public static String getThinkingFeeling(){
 		System.out.println("\nWhen making decisions, what do you prioritize?");
 		System.out.println("A. Logical analysis and objective criteria.");
 		System.out.println("B. Personal values and the impact on others.");
 		System.out.print("\nEnter your choice (A/B): ");
         	String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "T" : "F";
+		return choice.equals("A") ? "T";
     }
 	public static String getSensingIntuition(){
 		System.out.println("\nWhen solving problems, what approach do you typically take?");
@@ -53,21 +51,17 @@ class MbtiTest {
 		System.out.println("B. Exploring abstract ideas and patterns.");
 		System.out.println("\n Enter your choice (A/B)");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "S" : "I" ;
+		return choice.equals("A") ? "S";
 }
 
-	public static String getAdaptability() {
-        System.out.println("How do you handle unexpected changes in plans?");
-        System.out.println("A. Adapting quickly and flexibly.");
-        System.out.println("B. Preferring to stick to the original plan.");
-        System.out.print("\nEnter your choice (A/B): ");
-        String choice = input.next().toUpperCase();
-        return choice.equals("A") ? "Flexible" : "Structured";
-
-
-
+	public static String getAdaptability(){
+		System.out.println("How do you handle unexpected changes in plans?");
+		System.out.println("A. Adapting quickly and flexibly.");
+		System.out.println("B. Preferring to stick to the original plan.");
+		System.out.print("\nEnter your choice (A/B): ");
+		String choice = input.next().toUpperCase();
+		return choice.equals("A") ? "Flexible";
 }
-
 
 }
 
