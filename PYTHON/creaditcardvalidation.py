@@ -1,13 +1,10 @@
 user_input = input("Enter credit card Number: ")
-
 length = len(user_input)
-print(length)
-
 first_number = user_input[0]
-print(first_number)
+second_number = user_input[1]
 
-if length > 12 and length < 17:
-	print("Valid")
-
+if 12 < length < 17:
+	
 else:
-	print("Invalid")
+	print("**Credit card validity status: Invalid")
+print("*******************************************")
