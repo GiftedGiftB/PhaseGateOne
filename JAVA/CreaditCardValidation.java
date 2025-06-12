@@ -5,7 +5,7 @@ public class CreaditCardValidation{
 
 	String userInput;
 
-	System.out.print("Enter creadit card: ");
+	System.out.print("Enter creadit card Number: ");
 	userInput = input.next();
 
 	int length = userInput.length();
