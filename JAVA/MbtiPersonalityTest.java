@@ -1,8 +1,8 @@
 import java.util.Scanner;
-class MbtiTest {
+class MbtiTest{
 	static Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 
 		System.out.println("""
 				MBTI Personality Test 
@@ -13,8 +13,7 @@ class MbtiTest {
 		String thinkingFeeling = getThinkingFeeling();
 		String sensingIntuition = getSensingIntuition();
 		String adaptability = getAdaptability();
-
-		String personalityType = sensingIntuition + extraversionIntroversion + thinkingFeeling + judgingPerceiving;
+		String personalityType = sensingIntuition + extraversionIntroversion + thinkingFeeling + judgingPerceiving + adaptability;
 
 		System.out.println("\nYour personality type is: " + personalityType);
     }
@@ -25,7 +24,7 @@ class MbtiTest {
 		System.out.println("B. Brainstorming new ideas and exploring different possibilities.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next();
-		return choice.equals("A") ? "J";
+		return choice.equals("A") ? "J" : "P";
     }
 
 	public static String getExtraversionIntroversion(){
@@ -34,7 +33,7 @@ class MbtiTest {
 		System.out.println("B. Reserved and reflective, preferring to observe before contributing.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "E";
+		return choice.equals("A") ? "E" : "I";
     }
 
 	public static String getThinkingFeeling(){
@@ -43,16 +42,16 @@ class MbtiTest {
 		System.out.println("B. Personal values and the impact on others.");
 		System.out.print("\nEnter your choice (A/B): ");
         	String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "T";
+		return choice.equals("A") ? "T" : "F";
     }
 	public static String getSensingIntuition(){
 		System.out.println("\nWhen solving problems, what approach do you typically take?");
 		System.out.println("A. Focusing on concrete facts and details.");
 		System.out.println("B. Exploring abstract ideas and patterns.");
-		System.out.println("\n Enter your choice (A/B)");
+		System.out.println("\nEnter your choice (A/B)");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "S";
-}
+		return choice.equals("A") ? "S" : "I";
+ }
 
 	public static String getAdaptability(){
 		System.out.println("How do you handle unexpected changes in plans?");
@@ -60,8 +59,10 @@ class MbtiTest {
 		System.out.println("B. Preferring to stick to the original plan.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "Flexible";
-}
+		return choice.equals("A") ? "F" : "S";
 
+
+
+}
 }
 
