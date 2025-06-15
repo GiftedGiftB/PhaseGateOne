@@ -6,7 +6,7 @@ print("""
 def main():
 	judging_perceiving = get_judging_perceiving()
 	extraversion_introversion = get_extraversion_introversion()
-	#thinking_feeling = get_thinking_feeling()
+	thinking_feeling = get_thinking_feeling()
 	#sensing_intuition = get_sensing_intuition()
 	#personality_type = sensing_intuition + extraversion_introversion + thinking_feeling + judging_perceiving
 	#print("\nYour personality type is:", personality_type)
@@ -29,3 +29,12 @@ def main():
 					return "E"
 				else:
 					return "I"
+			def get_thinking_feeling():
+				print("\nWhen making decisions, what do you prioritize?")
+				print("A. Logical analysis and objective criteria.")
+				print("B. Personal values and the impact on others.")
+				choice = input("\nEnter your choice (A/B): ").upper()
+				if choice == "A":
+					return "T"
+				else:
+					return "F"
