@@ -7,9 +7,9 @@ last_cycle_start_date = int(input("Enter last cycle start date (in days, e.g., 1
 current_cycle_start_date = int(input("Enter current cycle start date (in days, e.g., 1-31): "))
 
 if last_cycle_start_date > current_cycle_start_date:
-    temp = last_cycle_start_date
-    last_cycle_start_date = current_cycle_start_date
-    current_cycle_start_date = temp
+	temp = last_cycle_start_date
+	last_cycle_start_date = current_cycle_start_date
+	current_cycle_start_date = temp
 
 cycle_length = current_cycle_start_date - last_cycle_start_date
 
