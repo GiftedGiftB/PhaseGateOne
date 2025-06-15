@@ -38,3 +38,14 @@ def main():
 					return "T"
 				else:
 					return "F"
+
+    
+			def get_sensing_intuition():
+				print("\nWhen solving problems, what approach do you typically take?")
+				print("A. Focusing on concrete facts and details.")
+				print("B. Exploring abstract ideas and patterns.")
+				choice = input("\nEnter your choice (A/B): ").upper()
+				if choice == "A":
+					return "S"
+				else:
+					return "I"
