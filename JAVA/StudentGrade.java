@@ -28,8 +28,10 @@ Saved successfully
                 studentScore[row][column] = input.nextDouble();
 		
 		if(studentScore[row][column] <= 100){	
-		System.out.print("invalid");
 			break;
+		}
+		else{
+			System.out.println("Invalid input.Enter a score from 0 - 100");
 		}
 		}
 
@@ -46,13 +48,13 @@ Saved successfully
 System.out.println("=========================================================");
 	System.out.print("STUDENT\t\t");
 	
-	for (int row = 0; row < studentScore.length; row++) {
+	for (int row = 0; row < numberOfSubject; row++) {
 		
-		System.out.print("SUB" + (row + 1) + "\t");
+		System.out.print("SUB " + (row + 1) + "\t");
 	}
 System.out.println("\n=========================================================");
 
-	for (int column = 0; column < studentScore.length; column++) {
+	for (int column = 0; column < numberOfStudent; column++) {
 		System.out.println("Student " + (column + 1));
 	}
 System.out.println("""
