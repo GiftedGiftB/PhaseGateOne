@@ -23,8 +23,15 @@ Saved successfully
 		System.out.println("Entering score for student " + (row + 1));
 
 		System.out.println("Entering score for subject " + (column + 1));
+		while(true){
                 System.out.print("Enter student score: ");
-                studentScore[row][column] = input.nextDouble(); // Changed to nextDouble()
+                studentScore[row][column] = input.nextDouble();
+		
+		if(studentScore[row][column] <= 100){	
+		System.out.print("invalid");
+			break;
+		}
+		}
 
 System.out.print("""
 Saving >>>>>>>>>>>>>>>>>>>>>>
@@ -37,11 +44,11 @@ Saved successfully
 	}
 
 System.out.println("=========================================================");
-	System.out.print("STUDENT");
+	System.out.print("STUDENT\t\t");
 	
 	for (int row = 0; row < studentScore.length; row++) {
 		
-		System.out.print("\tSUB " + (row + 1));
+		System.out.print("SUB" + (row + 1) + "\t");
 	}
 System.out.println("\n=========================================================");
 
