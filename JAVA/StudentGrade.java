@@ -38,14 +38,21 @@ Saved successfully
 
 System.out.println("=========================================================");
 	System.out.print("STUDENT");
-
+	
 	for (int row = 0; row < studentScore.length; row++) {
 		
 		System.out.print("\tSUB " + (row + 1));
-
-	//for (int column = 0; column < studentScore[row].length; column++) {
-	//}
 	}
+System.out.println("\n=========================================================");
+
+	for (int column = 0; column < studentScore.length; column++) {
+		System.out.println("Student " + (column + 1));
+	}
+System.out.println("""
+=========================================================
+=========================================================
+""");
+
 	
 }
 
