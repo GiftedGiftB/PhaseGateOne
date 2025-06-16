@@ -17,8 +17,8 @@ Saving >>>>>>>>>>>>>>>>>>>>>>>>
 Saved successfully
 
 """);
-	for (int row = 0; row < studentScore.length; row++) {
-		for (int column = 0; column < studentScore[row].length; column++) {
+	for (int row = 0; row < studentScore.length; row++){
+		for (int column = 0; column < studentScore[row].length; column++){
 
 		System.out.println("Entering score for student " + (row + 1));
 
@@ -48,18 +48,26 @@ Saved successfully
 System.out.println("=========================================================");
 	System.out.print("STUDENT\t\t");
 	
-	for (int row = 0; row < numberOfSubject; row++) {
+	for (int row = 0; row < numberOfStudent; row++){
 		
 		System.out.print("SUB " + (row + 1) + "\t");
 	}
+		System.out.print(" TOT\tAVE\t POS");
 System.out.println("\n=========================================================");
 
-	for (int column = 0; column < numberOfStudent; column++) {
-		System.out.println("Student " + (column + 1));
+	int total = 0;
+	int average = 0;
+	for (int column = 0; column < numberOfSubject; column++){
+
+		System.out.print("\nStudent " + (column + 1));
+		
+	
+	
 	}
+	System.out.print("\t" + studentScore(column + 1));
 System.out.println("""
-=========================================================
-=========================================================
+\n=====================================================
+=======================================================
 """);
 
 	
