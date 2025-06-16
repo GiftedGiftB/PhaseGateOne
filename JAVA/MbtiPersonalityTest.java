@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class MbtiTest{
+public class MbtiPersonalityTest{
 	static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args){
@@ -25,6 +25,8 @@ class MbtiTest{
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next();
 		return choice.equals("A") ? "J" : "P";
+
+
     }
 
 	public static String getExtraversionIntroversion(){
@@ -59,7 +61,7 @@ class MbtiTest{
 		System.out.println("B. Preferring to stick to the original plan.");
 		System.out.print("\nEnter your choice (A/B): ");
 		String choice = input.next().toUpperCase();
-		return choice.equals("A") ? "F" : "S";
+		return choice.equals("A") ? "P" : "J";
 
 
 
