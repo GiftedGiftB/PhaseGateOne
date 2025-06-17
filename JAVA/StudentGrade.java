@@ -60,11 +60,11 @@ System.out.println("\n========================================================="
 	for (int column = 0; column < numberOfSubject; column++){
 
 		System.out.print("\nStudent " + (column + 1));
-		
+		System.out.print("\t" + studentScore[column]);
 	
 	
 	}
-	System.out.print("\t" + studentScore(column + 1));
+
 System.out.println("""
 \n=====================================================
 =======================================================
