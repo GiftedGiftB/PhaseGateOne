@@ -1,3 +1,4 @@
+
 def create_account():
 	first_name = input("Enter account number: ")
 	last_name = input("Enter name: ")
@@ -20,10 +21,13 @@ def withdraw():
 def show_balance():
 	print(f"your balance is ${balance:.2f}")
 
-def transfer():
+def transfer_to_other_bank():
 	recipiantNumber = int(input("Enter the recipiant account number: "))
 #not done yet
-
+def change_pin():
+	user_pin = int(input("Enter pin: "))
+	if user_pin != 0 or user_pin > 7:
+		print("invalid pin")
 balance = 0
 is_running = True
 
@@ -33,16 +37,17 @@ while is_running:
 2. Close account
 3. Deposit money
 4. Withdraw money
-5. Check accout balance
+5. Check account balance
 6. Tranfer from one account to another
 7. Change pin
+8. Exit
 """)
 	userNumber = int(input("Enter a number from 1 - 4: "))
 	match userNumber:
 		case 1:
 			create_account()
 		case 2:
-			is_running = False
+
 		case 3: 
 			balance += deposit()
 		case 4: 
@@ -52,7 +57,9 @@ while is_running:
 		case 6:
 			transfer()
 		case 7:
-
+			change_pin():
+		case 8:
+			is_running = False
 		case _:
 			print("invalid.")
 print("Goodbye")
